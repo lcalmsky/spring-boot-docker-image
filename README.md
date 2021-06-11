@@ -47,12 +47,12 @@ spring-boot-docker-image             0.0.1-SNAPSHOT      89a7b3bab425        41 
 
 - Docker Image 실행
 
-.Image ID로 실행
+*Image ID로 실행*
 ```shell
 > docker run --rm -p 8080:8080 89a7b3bab425
 ```
 
-.Image 이름으로 실행
+*Image 이름으로 실행*
 ```shell
 > docker run --rm -p 8080:8080 spring-boot-docker-image:0.0.1-SNAPSHOT
 ```
