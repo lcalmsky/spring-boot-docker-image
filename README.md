@@ -2,7 +2,9 @@
 
 ## Overview
 
-스프링 부트를 이용하여 도커 이미지를 쉽게 만드는 방법을 소개
+스프링 부트를 이용하여 도커 이미지를 쉽게 만드는 방법을 소개합니다.
+
+스프링 부트의 계층(layer)중 중복으로 포함되는 계층(라이브러리, 부트 로더 등)을 캐싱하여 효율적으로 도커 이미지를 생성합니다.
 
 ### Spring Boot Version
 
@@ -45,6 +47,12 @@ spring-boot-docker-image             0.0.1-SNAPSHOT      89a7b3bab425        41 
 
 - Docker Image 실행
 
+.Image ID로 실행
 ```shell
 > docker run --rm -p 8080:8080 89a7b3bab425
+```
+
+.Image 이름으로 실행
+```shell
+> docker run --rm -p 8080:8080 spring-boot-docker-image:0.0.1-SNAPSHOT
 ```
