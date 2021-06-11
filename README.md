@@ -13,7 +13,7 @@
 - spring-boot-gradle-plugin dependency 추가
 - bootJar task에 layered 추가
   - layered()는 deprecated 되었음
-  - layered(Action<LayeredSpec> action) 사용 권장
+  - layered(Action&lt;LayeredSpec&gt; action) 사용 권장
 
 ```groovy
 dependencies {
